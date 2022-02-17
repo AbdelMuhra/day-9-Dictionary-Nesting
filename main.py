@@ -38,3 +38,15 @@ travel_log =[
     "Visited": ["Pretoria","Johannesburg","Cape Town"]
   }
 ]
+
+#function to add a new country to the dictionary
+def add_new_country(country_name, visits_num, visited_cities):
+    add_country = {}
+    add_country["country"] = country_name
+    add_country["visits"] = visits_num
+    add_country["cities"] = visited_cities
+    travel_log.append(add_country)
+
+
+add_new_country("Syria", 2, ["Damascus", "Allepo"])
+print(travel_log)
